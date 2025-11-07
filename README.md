@@ -1,31 +1,67 @@
-# Create React App
+# Finlet Web
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+Finlet is a modern personal finance companion that delivers sleek, data-rich calculators for everyday money decisions. The site is built with React, Material UI, and Recharts, and is styled with a custom dark theme that spotlights charts, tables, and responsive layouts.
 
-## Deploy Your Own
+## Features
 
-Deploy your own Create React App project with Vercel.
+- **Investment Projection** – Plan recurring contributions, compare monthly vs annual compounding, and review detailed accumulation schedules with interactive line charts and tables.
+- **Percentage Calculators** – Quickly compute "percentage of" values and understand how one number relates to another with contextual chips and instant results.
+- **Percentage Change Analyzer** – Track increases or decreases between two values, including visual signals (up/down badges) and a progress indicator.
+- **Responsive Experience** – Optimised layouts for mobile, tablet, and desktop with polished cards, gradients, and glassmorphism accents.
+- **About Page** – Explains the Finlet philosophy, highlights use cases, and showcases the broader vision for finance tooling.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+## Tech Stack
 
-_Live Example: https://create-react-template.vercel.app/_
+- **React 18** with TypeScript support
+- **Material UI v5** for components and theming
+- **Recharts** for charts and data visualisation
+- **React Router v6** for SPA navigation
+- **Inter Variable** for typography
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm start
+```
+
+Open your browser to [http://localhost:3000](http://localhost:3000) to view the app. The page automatically reloads when you save edits, and lint errors appear in the terminal.
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start` – Run the app in development mode.
+- `npm run build` – Create an optimised production build.
+- `npm test` – Launch the interactive test runner.
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+src/
+ ├── components/
+ │   ├── header/          # Responsive app bar
+ │   ├── footer/          # Glassmorphism footer
+ │   ├── percentage/      # Percentage calculators
+ │   ├── investment/      # Investment projection card + chart
+ │   └── about/           # About section content
+ ├── pages/
+ │   ├── Home.tsx         # Hero section + calculators grid
+ │   └── About.tsx        # About page layout
+ ├── theme.ts             # Custom MUI theme
+ ├── App.tsx              # Router + layout shell
+ └── index.js             # App bootstrap
+```
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+## Deployment
 
-### `npm test`
+The project follows standard Create React App conventions, so it can be deployed to providers such as Vercel, Netlify, or any static hosting service that serves the `build` directory.
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+Finlet is crafted to help you make confident money moves—contributions, comparisons, and projections all in one polished dashboard.
